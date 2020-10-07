@@ -1,11 +1,12 @@
 package com.bjpowernode.crm.settings.service;
 
+import com.bjpowernode.crm.exception.LoginException;
 import com.bjpowernode.crm.settings.domain.User;
 
 public interface UserService {
 
 
-    User selectUser(String loginAct,String loginPwd);
+    User selectUser(String loginAct,String loginPwd,String ip) throws LoginException;
 
 
 }
